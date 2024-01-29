@@ -53,6 +53,19 @@ $(function(){
           $(this).stop().addClass("show");
         }
       });
+
+    // スムーススクロール
+    $('a[href^="#"]').click(function() {
+        // リンク取得
+        let href = $(this).attr("href");
+        // ジャンプ先のidをセット
+        let target = $(href == "#" || href == "" ? 'hmtl' : href);
+        // 移動距離
+        let position = target.offset().top;
+        // スクロール時間
+        $("html, body").animate({scrollTop:position}, 600, "swing");
+        return false;
+    });
 })
 
 // hamburger共通処理
