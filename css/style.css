@@ -106,6 +106,7 @@ header {
 
 /* mainvisual */
 #mv {
+    position: relative;
     margin-top: 30px;
 }
 
@@ -119,6 +120,14 @@ header {
 #mv-img img {
     width: 100%;
     object-fit: cover;
+}
+
+.mv-img-text {
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    transform: rotate(-5deg);
+    width: 50%;  
 }
 
 #mv-container {
