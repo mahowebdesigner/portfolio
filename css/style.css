@@ -288,8 +288,8 @@ header {
 #about .about-img {
     display: flex;
     width: 35%;
-    align-items: flex-end;
-    padding: 200px 35px 0 35px;
+    align-items: flex-start;
+    padding: 100px 35px 100px 35px;
 }
 
 #about .about-img img {
